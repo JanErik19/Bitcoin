@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Calculator</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Bitcoin Calculator</h1>
+
+        <form action="">
+            <input type="number" id="numberOfMoney" placeholder="Enter the number of bitcoins to display">
+            <label for="numberOfMoney"></label>
+        </form>
+
+        <form action="">
+            <select name="mySelect" size="4">
+                <option value="Eur">Eur</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+            </select>
+        </form>
+        <button onclick="">Get Cost</button>
+        <p id="demo"></p>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("mySelect").options.length;
+              document.getElementById("demo").innerHTML = "Found " + x + " options in the list.";
+            }
+         </script>
+    </div>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
